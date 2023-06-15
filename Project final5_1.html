@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter</title>
+  <link rel="stylesheet" type="text/css" href="Project final5_1.css">
+
+  <script>
+  function convert() {
+    const inputValue = parseFloat(document.getElementById("inputValue").value);
+    const conversionType = document.querySelector('input[name="conversionType"]:checked').value;
+    let result;
+  
+    switch (conversionType) {
+      case "fahrenheitToCelsius":
+        result = (inputValue - 32) * (5 / 9);
+        document.getElementById("result").textContent = `${inputValue} Fahrenheit = ${result.toFixed(2)} Celsius`;
+        break;
+      case "kilometersToMiles":
+        result = inputValue * 0.6213712;
+        document.getElementById("result").textContent = `${inputValue} Kilometers = ${result.toFixed(2)} Miles`;
+        break;
+      case "metersToFeet":
+        result = inputValue * 3.28084;
+        document.getElementById("result").textContent = `${inputValue} Meters = ${result.toFixed(2)} Feet`;
+        break;
+    }
+  }
+</script>  
+
+</head>
+<body>
+  <header>
+    <h1>Unit Converter</h1>
+  </header>
+
+  <main>
+    <div class="converter-form">
+      <div class="radio-group">
+        <input type="radio" id="fahrenheitToCelsius" name="conversionType" value="fahrenheitToCelsius" checked>
+        <label for="fahrenheitToCelsius">Fahrenheit to Celsius</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="kilometersToMiles" name="conversionType" value="kilometersToMiles">
+        <label for="kilometersToMiles">Kilometers to Miles</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="metersToFeet" name="conversionType" value="metersToFeet">
+        <label for="metersToFeet">Meters to Feet</label>
+      </div>
+
+      <input type="text" id="inputValue" placeholder="Enter value to convert">
+      <button onclick="convert()">Convert</button>
+
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

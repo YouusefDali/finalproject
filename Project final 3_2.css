@@ -1,0 +1,35 @@
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    Text-shadow: 0 0 30px yellow;
+    
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .personal-info-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .personal-info-table th, .personal-info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .personal-info-table th {
+    background-color: #f1f1f1;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,26 @@
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #game-container {
+    text-align: center;
+  }
+  
+  #dice-container {
+    margin-top: 20px;
+  }
+  
+  #result-text {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
